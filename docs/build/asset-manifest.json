@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/awx_coding_challenge/static/css/main.50067250.chunk.css",
+    "main.js": "/awx_coding_challenge/static/js/main.a0862d8a.chunk.js",
+    "main.js.map": "/awx_coding_challenge/static/js/main.a0862d8a.chunk.js.map",
+    "runtime-main.js": "/awx_coding_challenge/static/js/runtime-main.adbd2f09.js",
+    "runtime-main.js.map": "/awx_coding_challenge/static/js/runtime-main.adbd2f09.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/awx_coding_challenge/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.dd6e8881.chunk.js": "/awx_coding_challenge/static/js/2.dd6e8881.chunk.js",
+    "static/js/2.dd6e8881.chunk.js.map": "/awx_coding_challenge/static/js/2.dd6e8881.chunk.js.map",
+    "static/js/3.9a490cce.chunk.js": "/awx_coding_challenge/static/js/3.9a490cce.chunk.js",
+    "static/js/3.9a490cce.chunk.js.map": "/awx_coding_challenge/static/js/3.9a490cce.chunk.js.map",
+    "index.html": "/awx_coding_challenge/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/awx_coding_challenge/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.50067250.chunk.css.map": "/awx_coding_challenge/static/css/main.50067250.chunk.css.map",
+    "static/js/2.dd6e8881.chunk.js.LICENSE.txt": "/awx_coding_challenge/static/js/2.dd6e8881.chunk.js.LICENSE.txt",
+    "static/media/EmailModal.css": "/awx_coding_challenge/static/media/NotoSansTC-Regular.b018ff7b.otf",
+    "static/media/Header.css": "/awx_coding_challenge/static/media/STIXTwoText-Bold.85fcbc98.ttf",
+    "static/media/logo.66e2e7f8.png": "/awx_coding_challenge/static/media/logo.66e2e7f8.png",
+    "static/media/logo.6ce24c58.svg": "/awx_coding_challenge/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.adbd2f09.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.dd6e8881.chunk.js",
+    "static/css/main.50067250.chunk.css",
+    "static/js/main.a0862d8a.chunk.js"
+  ]
+}
