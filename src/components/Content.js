@@ -22,6 +22,7 @@ export default function Content() {
             style={{ background: "#70A618", border: "none" }}
             onClick={handleModalShow}
             variant="primary"
+            className="request-button"
           >
             Request an invite
           </Button>
