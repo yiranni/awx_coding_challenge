@@ -23,17 +23,22 @@ export default function EmailModal({ ...props }) {
 
   async function sendEmail(payload) {
     setLoading(true);
-    try {
-      const res = await fetch(url, {
-        method: "POST",
-        body: JSON.stringify(payload),
-      });
-      const json = await res.json();
-    } catch (err) {
-      setError(err);
-    }
+    // try {
+    await fetch(url, {
+      method: "POST",
+      body: JSON.stringify(payload),
+    }).then((res) => {
+      if (res.ok) {
+        setEmailSent(true);
+      }
+      return Promise.reject(res);
+    }).catch(response => {
+      response.json().then((json) => {
+        setError(json.errorMessage)
+      })
+    });
     setLoading(false);
-    setEmailSent(true);
+
   }
 
   const schema = yup.object().shape({
@@ -178,7 +183,7 @@ export default function EmailModal({ ...props }) {
                       Send
                     </Button>
                   )}
-                  {error && <p>{error}</p>}
+                  {error && <p style={{color: 'red', marginTop: 24}}>{error}</p>}
                 </Form>
               )}
             </Formik>
