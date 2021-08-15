@@ -1,0 +1,33 @@
+
+@font-face {
+  font-family: 'STIX';
+  src: url('../fonts/STIX/static/STIXTwoText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-size: normal;
+}
+.app-header {
+
+  font-family: 'STIX';
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  
+}
+img {
+  height: 24px;
+  margin: 0px 12px;
+}
+
+.nav {
+  height: 40px;
+  padding: 20px;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 576px){
+  .app-header {
+    text-align: center;
+    /* padding: 20px; */
+  }
+}

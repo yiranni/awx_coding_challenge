@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts//Noto_Sans_TC/NotoSansTC-Regular.otf")
+    format("truetype");
+  font-weight: normal;
+}
+
+.app-content {
+  padding:100px auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+h1,
+p {
+  text-align: center;
+  color: #3d4056;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.slogan {
+  margin: 0 auto;
+}
+.request {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.modal-title {
+  text-align: center !important;
+}
+
+@media screen and (max-width: 576px) {
+  .home-content {
+    padding: 0;
+  }
+}
