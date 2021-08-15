@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { Navbar } from 'react-bootstrap';
+import React from 'react';
 import logo from '../images/logo.png'
 import './Header.css'
 // import PropTypes from 'prop-types';

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Button, Modal, Form } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import "./Content.css";
 import EmailModal from "./EmailModal";
 // import { useSendRequestInvite } from './redux/sendRequestInvite';

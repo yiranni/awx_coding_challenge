@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./EmailModal.css";
 import { Modal, Form, Button } from "react-bootstrap";
 import { Formik } from "formik";
@@ -27,18 +27,19 @@ export default function EmailModal({ ...props }) {
     await fetch(url, {
       method: "POST",
       body: JSON.stringify(payload),
-    }).then((res) => {
-      if (res.ok) {
-        setEmailSent(true);
-      }
-      return Promise.reject(res);
-    }).catch(response => {
-      response.json().then((json) => {
-        setError(json.errorMessage)
+    })
+      .then((res) => {
+        if (res.ok) {
+          setEmailSent(true);
+        }
+        return Promise.reject(res);
       })
-    });
+      .catch((response) => {
+        response.json().then((json) => {
+          setError(json.errorMessage);
+        });
+      });
     setLoading(false);
-
   }
 
   const schema = yup.object().shape({
@@ -183,7 +184,9 @@ export default function EmailModal({ ...props }) {
                       Send
                     </Button>
                   )}
-                  {error && <p style={{color: 'red', marginTop: 24}}>{error}</p>}
+                  {error && (
+                    <p style={{ color: "red", marginTop: 24 }}>{error}</p>
+                  )}
                 </Form>
               )}
             </Formik>
